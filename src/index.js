@@ -8,9 +8,7 @@ module.exports = function check(str, bracketsConfig) {
     for (let j = 0; j < newBracketsConfig.length; j++) {
       avString = avString.replace(newBracketsConfig[j], '')
     }
-    if (avString.length == 0) {
-      return true
-    }
+    if (avString.length == 0) return true
   }
   return false
 }
